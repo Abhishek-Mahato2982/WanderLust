@@ -1,0 +1,80 @@
+<style>
+  .search-btn {
+    background-color: #fe424d;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .search-btn:hover {
+    background-color: #fe424d;
+    color: #fff;
+  }
+
+  .search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+
+  .search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 3rem;
+    text-align: center;
+  }
+</style>
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listing"><i class="fa-solid fa-compass"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/listing">Explore</a>
+      </div>
+
+      <div class="navbar-nav ms-auto">
+        <form action="/listing/search" class="d-flex" role="search">
+          <input class="form-control me-2 search-inp" type="search" placeholder="Search destinations" name="location" />
+
+            <select class="form-select search-inp" style="opacity: 0.8;" name="country">
+              <option  selected>Select Country</option>
+              <option value="United States">United States</option>
+              <option value="Italy">Italy</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Tanzania">Tanzania</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="Fiji">Fiji</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Canada">Canada</option>
+              <option value="Thailand">Thailand</option>
+              <option value="United Arab Emirates">United Arab Emirates</option>
+              <option value="Greece">Greece</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Japan">Japan</option>
+              <option value="Maldives">Maldives</option>
+              <option value="India">India</option>
+            </select>
+
+          <button class="btn search-btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>Search
+          </button>
+        </form>
+      </div>
+
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="/listing/new">Airbnb your home</a>
+        <% if(!currUser){ %>
+          <a class="nav-link" href="/signup"><b>Sign Up</b></a>
+          <a class="nav-link" href="/login"><b>Log In</b></a>
+        <% } %> <% if(currUser) { %>
+          <a class="nav-link" href="/logout"><b>Log Out</b></a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
