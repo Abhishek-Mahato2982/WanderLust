@@ -107,6 +107,9 @@ app.use((err,req,res,next) => {
     res.status(statusCode).render("listing/error.ejs", {message});
 });
 
+app.get("/", (req, res) => {
+  res.redirect("/listing"); // Or your main route
+});
 
 app.listen(8080, ()=>{
     console.log("Server 8080 is listening.");
