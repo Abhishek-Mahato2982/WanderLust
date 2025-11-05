@@ -3,6 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f0f2f5;
 }
 
 #main{
@@ -90,6 +91,20 @@ body{
 .card-img-overlay:hover{
     opacity: 0.2;
     background-color: white;
+}
+
+/* Card Hover Effect */
+.card:hover, .listing-card:hover, .category-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* New page designing */
