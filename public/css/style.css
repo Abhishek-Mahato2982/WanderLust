@@ -22,14 +22,16 @@ body{
 }
 
 #main{
-    width: 100%;
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 
 .container{
     flex: 1;
     position: relative; 
-    z-index: 1
+    z-index: 1;
 }
 
 .navbar{
@@ -78,6 +80,9 @@ body{
     justify-content: center;
     align-items: space-evenly;
     box-shadow: 0 -15px 25px rgba(0,0,0,0.15);
+    width: 100%;
+    margin-top: auto;    /* This pushes the footer down */
+    padding: 1rem 0;
 }
 
 /* Card Design */
