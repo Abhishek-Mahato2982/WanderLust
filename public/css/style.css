@@ -5,6 +5,10 @@ body{
     min-height: 100vh;
 }
 
+#main{
+    width: 100%;
+}
+
 .container{
     flex: 1;
 }
