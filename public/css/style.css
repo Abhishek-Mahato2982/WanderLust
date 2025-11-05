@@ -87,7 +87,7 @@ body{
 
 /* Card Design */
 .listing-card{
-    border: none !important;
+    border-radius: 1rem !important;
     margin-bottom: 2rem;
 }
 
