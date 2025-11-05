@@ -1,77 +1,92 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: "Plus Jakarta Sans", sans-serif !important;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     background-color: #ebebeb;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #ebebeb;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    z-index: 1000;
 }
 
 #particles-js {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-  background-color: #ebebeb;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    background-color: #ebebeb;
 }
 
 #main, .container, header, footer {
-  position: relative;
-  z-index: 1;
-}
-
-#main{
-    min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.container{
-    flex: 1;
-    position: relative; 
+    position: relative;
     z-index: 1;
 }
 
-.navbar{
-    height: 5rem;
-    background-color: #ebebeb;
-    position: fixed;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+#main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.fa-compass{
+.container {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.fa-compass {
     color: #fe424d;
     font-size: 2rem;
 }
 
-.nav-link{
-    color: #222222 !important; /* here we have used !important because we using the bootstrap style, so in order to overrider this we !important;*/
+.nav-link {
+    color: #222222 !important;
 }
 
-.f-info-links a{
+.f-info-links a {
     text-decoration: none;
     color: #222222;
 }
 
-.f-info-links a:hover{
+.f-info-links a:hover {
     text-decoration: underline;
 }
 
-.f-info-links, .f-info-socials, .f-info-brand{
+.f-info-links, .f-info-socials, .f-info-brand {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.f-info-socials i{
+.f-info-socials i {
     margin-right: 1rem;
     font-size: 1.2em;
 }
 
-.f-info{
+.f-info {
     text-align: center;
     display: flex;
     background-color: #ebebeb;
@@ -81,81 +96,77 @@ body{
     align-items: space-evenly;
     box-shadow: 0 -15px 25px rgba(0,0,0,0.15);
     width: 100%;
-    margin-top: auto;    /* This pushes the footer down */
+    margin-top: auto;
     padding: 1rem 0;
 }
 
 /* Card Design */
-.listing-card{
+.listing-card {
     border-radius: 1rem !important;
     margin-bottom: 2rem;
 }
 
-.card-img-top{
+.card-img-top {
     border-radius: 1rem !important;
     width: 100% !important;
     object-fit: cover !important;
 }
 
-.card-body{
+.card-body {
     padding: 0px;
 }
 
-.card-text p{
+.card-text p {
     font-weight: 400 !important;
 }
 
-.listing-link{
+.listing-link {
     text-decoration: none;
 }
 
 /* Card Hover Effect */
 .card:hover, .listing-card:hover, .category-card:hover {
-  transform: translateY(-8px) scale(1.04);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
-  transition: box-shadow 0.3s, transform 0.3s;
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s, transform 0.3s;
 }
 
 @keyframes fadeSlideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-
-/* creating clickable effect */
-.card-img-overlay{
+.card-img-overlay {
     opacity: 0;
 }
 
-.card-img-overlay:hover{
+.card-img-overlay:hover {
     opacity: 0.2;
     background-color: white;
 }
 
-/* New page designing */
-.add-btn{
+.add-btn {
     background-color: #fe424d !important;
     border: none !important;
 }
 
-/* styling the image and btn in the show.ejs */
-.show-img{
+.show-img {
     height: 30vh;
 }
 
-.btns{
+.btns {
     display: flex;
 }
 
-svg{
+svg {
     height: 2rem;
     width: 2rem;
 }
 
 /* Map Styling */
-#map { 
+#map {
     height: 400px;
     width: 117vh;
     position: relative;
