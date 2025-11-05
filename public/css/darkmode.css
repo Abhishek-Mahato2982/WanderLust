@@ -1,0 +1,185 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+    background-color: #2d2d2d;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .container {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode #particles-js {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .card,
+body.dark-mode .listing-card {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+body.dark-mode .card-body {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-mode .card-text {
+    color: #b0b0b0;
+}
+
+body.dark-mode .nav-link {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .nav-link:hover {
+    color: #fe424d !important;
+}
+
+body.dark-mode .f-info {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-mode .f-info-links a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .f-info-links a:hover {
+    color: #fe424d;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark-mode textarea {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus,
+body.dark-mode textarea:focus {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    border-color: #fe424d;
+    box-shadow: 0 0 0 0.2rem rgba(254, 66, 77, 0.25);
+}
+
+body.dark-mode .btn-outline-dark {
+    color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+body.dark-mode .btn-outline-dark:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    color: #1a1a1a;
+}
+
+body.dark-mode .alert {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+body.dark-mode .btn-dark {
+    background-color: #444;
+    border-color: #555;
+}
+
+body.dark-mode .btn-dark:hover {
+    background-color: #555;
+    border-color: #666;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .search-inp {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark-mode .search-inp::placeholder {
+    color: #888;
+}
+
+body.dark-mode hr {
+    border-color: #444;
+    opacity: 0.5;
+}
+
+body.dark-mode .fa-compass {
+    color: #fe424d;
+}
+
+/* Theme Toggle Button Styling */
+.theme-toggle-btn {
+    background-color: #fe424d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #ff5a67;
+    transform: scale(1.1);
+}
+
+body.dark-mode .theme-toggle-btn {
+    background-color: #ffd700;
+}
+
+body.dark-mode .theme-toggle-btn:hover {
+    background-color: #ffed4e;
+}
+
+/* Mapbox Dark Mode Styling */
+body.dark-mode .mapboxgl-popup {
+    background-color: #2d2d2d;
+}
+
+body.dark-mode .mapboxgl-popup-content {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-mode .mapboxgl-popup-tip {
+    border-top-color: #2d2d2d;
+}
+
+/* Starability rating styling in dark mode */
+body.dark-mode .starability-result {
+    color: #e0e0e0;
+}
+
+/* Link styling */
+body.dark-mode a {
+    color: #fe424d;
+}
+
+body.dark-mode a:hover {
+    color: #ff5a67;
+}
