@@ -54,6 +54,7 @@ body {
     flex: 1;
     position: relative;
     z-index: 1;
+    margin-top: 2rem;
 }
 
 .fa-compass {
