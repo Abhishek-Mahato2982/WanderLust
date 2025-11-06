@@ -6,7 +6,7 @@ body.dark-mode {
 
 body.dark-mode .navbar {
     background-color: #2d2d2d;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 25px rgba(172, 171, 171, 0.5);
 }
 
 body.dark-mode .container {
@@ -44,6 +44,7 @@ body.dark-mode .nav-link:hover {
 body.dark-mode .f-info {
     background-color: #2d2d2d;
     color: #e0e0e0;
+    box-shadow: 0 -15px 25px rgba(172, 171, 171, 0.5);
 }
 
 body.dark-mode .f-info-links a {
